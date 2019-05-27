@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loading.html</title>
+	<style>
+		.loader{
+			position: relative;
+			width: 4px;
+			height: 20px;
+			background: #ff6700;
+			margin: 0 auto;
+		}
+		.loader:after,.loader:before{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			content: '';
+			width: 4px;
+			height: 20px;
+			background: #ff6700;
+		}
+		.loader:after{
+			margin-left: 10px;
+			transform: scale(1,0.5);
+		}
+		.loader:before{
+			margin-left: -10px;
+			transform: scale(1,0.3);
+		}
+
+		@keyframes loading{
+			from{
+
+			}
+			to{
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="loader"></div>
+</body>
+</html>

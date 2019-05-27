@@ -1,0 +1,55 @@
+.container{
+	width: 1228px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+/*购物车loading 图标部分*/
+.loader{
+	position: relative;
+	width: 4px;
+	height: 20px;
+	background: #ff6700;
+	margin: 0 auto;
+	animation: loading 0.3s linear 0s infinite alternate;
+}
+.loader:after,.loader:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	width: 4px;
+	height: 20px;
+	background: #ff6700;
+
+}
+.loader:after{
+	margin-left: 10px;
+	transform: scale(1,0.5);
+	animation: loading 0.3s linear 0.5s infinite alternate;
+}
+.loader:before{
+	margin-left: -10px;
+	transform: scale(1,0.5);
+	animation: loading 0.3s linear 0.3s infinite alternate;
+}
+@keyframes loading{
+	from{
+		opacity: 0.5;
+        transform: scale(1,0.5);
+	}
+	to{
+		opacity: 1;
+        transform: scale(1,1);
+	}
+}
